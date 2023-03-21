@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Oder now</title>
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <!-- font awesome cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/fontawesome-all.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+  
+    <link rel="icon" type="images/Logoooo.png" href="images/Logoooo.png" />
+
+</head>
+  <body>
+    <!-- header section starts      -->
+    <div class="top-header">
+      <div class="leftside">
+        <img src="images/Logoooo.png" alt="" />
+        <div class="topbuttons">
+          <a href="#about"
+            ><i class="fa-solid fa-right-to-bracket"></i>Sign In</a
+          >
+          <a href="#about"><i class="fa-regular fa-user"></i>Create Account</a>
+          <a class="find-mop" href="#about"
+            ><i class="fa-solid fa-location-dot"></i>Find Piza Pan</a
+          >
+        </div>
+      </div>
+      <div class="rightside">
+        <h3>AR</h3>
+        <h2>15616<i class="fa-solid fa-phone"></i></h2>
+      </div>
+    </div>
+    <header>
+      <nav class="navbar">
+        <div class="topbuttons1">
+            <a href="#about"
+              ><i class="fa-solid fa-right-to-bracket"></i>Sign In</a
+            >
+            <a href="#about"><i class="fa-regular fa-user"></i>Create Account</a>
+            <a href="#about"
+              ><i class="fa-solid fa-location-dot"></i>Find Piza Pan</a
+            >
+          </div>
+          <h2>Menu List</h2>
+        <a class="active" href="#home">HOME</a>
+        <a href="#">
+            <img class="menuimg" src="https://rosto-app.vercel.app/_next/static/media/pizza.2c04f144.svg" alt="">
+            PIZZA</a>
+        <a href="#">
+            <img class="menuimg" src="https://rosto-app.vercel.app/_next/static/media/pasta.5c11e864.svg" alt="">
+
+            PASTA</a>
+        <a href="#">
+            <img class="menuimg" src="https://rosto-app.vercel.app/_next/static/media/starters.ecc36884.svg" alt="">
+            
+            STARTERS</a>
+        <a href="#">
+            <img class="menuimg" src="https://rosto-app.vercel.app/_next/static/media/salad.0e0c2858.svg" alt="">
+            
+            SALADS</a>
+        <a href="#">
+            <img class="menuimg" src="https://rosto-app.vercel.app/_next/static/media/Deserts.089e8fb4.svg" alt="">
+            
+            DESSERTS</a>
+        <a href="#">
+            <img class="menuimg" src="https://rosto-app.vercel.app/_next/static/media/drinks.87a21ed0.svg" alt="">
+            
+            DRINKS</a>
+            <div class="rightside1">
+                <h2>15616<i class="fa-solid fa-phone"></i></h2>
+                <h3>العربيه</h3>
+            
+            </div>
+      </nav>
+
+      <div class="icons">
+        <i class="fas fa-bars" id="menu-bars"></i>
+        <i class="fas fa-search" id="search-icon"></i>
+
+        <a href="Cart.html" class="fas fa-shopping-cart"></a>
+      </div>
+    </header>
+
+    <!-- header section ends-->
+
+
+
+
+
+    <!-- search form  -->
+
+    <form action="" id="search-form">
+      <input
+        type="search"
+        placeholder="search here..."
+        name=""
+        id="search-box"
+      />
+      <label for="search-box" class="fas fa-search"></label>
+      <i class="fas fa-times" id="close"></i>
+    </form>
+
+
+
+<div class="ordernowsec">
+
+  <div class="leftside">
+
+    <img src="images/home-img-3.png" alt="">
+    </div>
+
+<div class="rightsidee">
+  <div class="container">
+    <div class="row">
+       
+        <div class="col-md-6">
+            <h2>BBQ Chicken Ranch
+            </h2>
+            <p>Ranch base sauce with grilled chicken pieces, topped with mushroom slices, onions, mixed with Mozzarella and topped with tasty BBQ sauce and chopped parsley.</p>
+            <form>
+              <label>Size:</label>
+              <div class="size-selector">
+                  <img  src="images/123123123.png" alt="Small" class="size-option" data-size="Small" data-price="5">
+                  <img src="images/123123123.png" alt="Medium" class="size-option" data-size="Medium" data-price="8">
+                  <img src="images/123123123.png" alt="Large" class="size-option" data-size="Large" data-price="10">
+              </div>
+              
+                <label>Quantity:</label>
+                <div class="quantity-selector">
+                    <button type="button" id="minus-button">-</button>
+                    <input type="number" id="quantity" min="1" value="1" step="1" readonly>
+                    <button type="button" id="plus-button">+</button>
+                </div>
+                
+                <label>Price:</label>
+                <span id="product-price">100</span>
+                <div id="total-price"></div>
+                <button class="ordernowbutt" type="submit">Order Now</button>
+            </form>
+        </div>
+    </div>
+  </div>
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+    <!-- footer section starts  -->
+
+    <section class="footer">
+      <div class="box-container">
+        <div class="box">
+          <h3>locations</h3>
+          <a href="#">india</a>
+          <a href="#">japan</a>
+          <a href="#">russia</a>
+          <a href="#">USA</a>
+          <a href="#">france</a>
+        </div>
+
+        <div class="box">
+          <h3>quick links</h3>
+          <a href="#">home</a>
+          <a href="#">dishes</a>
+          <a href="#">about</a>
+          <a href="#">menu</a>
+          <a href="#">reivew</a>
+          <a href="#">order</a>
+        </div>
+
+        <div class="box">
+          <h3>contact info</h3>
+          <a href="#">+123-456-7890</a>
+          <a href="#">+111-222-3333</a>
+          <a href="#">shaikhanas@gmail.com</a>
+          <a href="#">anasbhai@gmail.com</a>
+          <a href="#">mumbai, india - 400104</a>
+        </div>
+
+        <div class="box">
+          <h3>follow us</h3>
+          <a href="#">facebook</a>
+          <a href="#">twitter</a>
+          <a href="#">instagram</a>
+          <a href="#">linkedin</a>
+        </div>
+      </div>
+
+      <div class="credit">
+        copyright @ 2021 by <span>mr. web designer</span>
+      </div>
+    </section>
+
+    <!-- footer section ends -->
+
+    <!-- loader part  -->
+
+    <!-- <div class="loader-container">
+    <img src="images/loader.gif" alt="">
+</div> -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- custom js file link  -->
+    <script src="js/sliderhome.js"></script>
+    <script src="js/ord.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
